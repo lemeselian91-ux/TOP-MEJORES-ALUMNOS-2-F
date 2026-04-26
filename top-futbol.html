@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TOP FUTBOL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: rgb(9, 5, 61);
+      --text: #ffffff;
+      --stars-yellow: #ffd54f;   /* amarillo legible en fondo oscuro */
+      --stars-blue: #00bfff;     /* celeste para Steven y Demian */
+      --stars-red: #ff5252;      /* rojo para Érick */
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 12px 0 20px;
+      font-size: 1.8rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* Cada fila del ranking en una línea flexible y accesible */
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.06);
+      margin-bottom: 10px;
+    }
+
+    .pos {
+      font-weight: 700;
+      min-width: 42px;
+    }
+
+    .name {
+      flex: 1;
+    }
+
+    .flag {
+      width: 36px;
+      height: auto;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
+    .stars {
+      color: var(--stars-yellow);
+      font-size: 22px;
+      line-height: 1;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .stars-blue { color: var(--stars-blue); }
+    .stars-red  { color: var(--stars-red); }
+
+    /* Mobile: tipografía más grande, banderas más chicas, filas que envuelven */
+    @media (max-width: 480px) {
+      body { padding: 12px; }
+      h1 { font-size: 1.6rem; }
+      .row { flex-wrap: wrap; gap: 8px; padding: 10px; }
+      .flag { width: 30px; }
+      .stars { font-size: 20px; }
+      .pos { min-width: 38px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>TOP FUTBOL</h1>
+
+    <div class="row">
+      <div class="pos">#1</div>
+      <div class="name">Steven Curasma Huarcaya</div>
+      <img class="flag" src="https://flagpedia.net/data/flags/w580/us.png" alt="Bandera de Estados Unidos">
+      <div class="stars stars-blue">★★★★★</div>
+    </div>
+
+    <div class="row">
+      <div class="pos">#2</div>
+      <div class="name">Demian Burgos</div>
+      <img class="flag" src="https://flagpedia.net/data/flags/w580/gr.png" alt="Bandera de Grecia">
+      <div class="stars stars-blue">★★★★★</div>
+    </div>
+
+    <div class="row">
+      <div class="pos">#3</div>
+      <div class="name">Matías Velázquez</div>
+      <img class="flag" src="https://flagpedia.net/data/flags/w580/il.png" alt="Bandera de Israel">
+      <div class="stars">★★★★☆</div>
+    </div>
+
+    <div class="row">
+      <div class="pos">#4</div>
+      <div class="name">Thiago Sotil</div>
+      <img class="flag" src="https://flagpedia.net/data/flags/w580/gr.png" alt="Bandera de Grecia">
+      <div class="stars">★★★★☆</div>
+    </div>
+
+    <div class="row">
+      <div class="pos">#5</div>
+      <div class="name">Bautista Carruega</div>
+      <img class="flag" src="https://flagpedia.net/data/flags/w580/gr.png" alt="Bandera de Grecia">
+      <div class="stars">★★★★☆</div>
+    </div>
+
+    <div class="row">
+      <div class="pos">#6</div>
+      <div class="name">Ian Ezequiel</div>
+      <img class="flag" src="https://flagpedia.net/data/flags/w580/gb-sct.png" alt="Bandera de Escocia">
+      <div class="stars">★★★★☆</div>
+    </div>
+
+    <div class="row">
+      <div class="pos">#7</div>
+      <div class="name">Ian Cobos</div>
+      <img class="flag" src="https://flagpedia.net/data/flags/w580/gb-sct.png" alt="Bandera de Escocia">
+      <div class="stars">★★★☆☆</div>
+    </div>
+
+    <div class="row">
+      <div class="pos">#8</div>
+      <div class="name">Seco Fuentes Tian</div>
+      <img class="flag" src="https://flagpedia.net/data/flags/w580/cn.png" alt="Bandera de China">
+      <div class="stars">★★★☆☆</div>
+    </div>
+
+    <div class="row">
+      <div class="pos">#9</div>
+      <div class="name">Yamil Contreras</div>
+      <img class="flag" src="https://flagpedia.net/data/flags/w580/sa.png" alt="Bandera de Arabia Saudita">
+      <div class="stars">★★☆☆☆</div>
+    </div>
+
+    <div class="row">
+      <div class="pos">#10</div>
+      <div class="name">Kriwoceja Arian</div>
+      <img class="flag" src="https://flagpedia.net/data/flags/w580/ir.png" alt="Bandera de Irán">
+      <div class="stars">★★☆☆☆</div>
+    </div>
+
+    <div class="row">
+      <div class="pos">#11</div>
+      <div class="name">Juan Pablo Méndez</div>
+      <img class="flag" src="https://flagpedia.net/data/flags/w580/es.png" alt="Bandera de España">
+      <div class="stars">★★☆☆☆</div>
+    </div>
+
+    <div class="row">
+      <div class="pos">#12</div>
+      <div class="name">Érick Calisaya</div>
+      <img class="flag" src="https://flagpedia.net/data/flags/w580/no.png" alt="Bandera de Noruega">
+      <div class="stars stars-red">★☆☆☆☆</div>
+    </div>
+  </div>
+</body>
+</html>
